@@ -21,8 +21,8 @@ A content-based movie recommendation system built with Streamlit that suggests s
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd "Movie Recommender System"
+git clone https://github.com/rajatrgupta/Movie-Recommender-System.git
+cd Movie-Recommender-System
 ```
 
 2. Install the required packages:
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Make sure you have the required pickle files (`movie_list.pkl` and `similarity.pkl`) in the project directory.
+1. Make sure you have the required pickle files (`movie_list.pkl` and `similarity.pkl`) in the `models/` directory.
 
 2. Run the Streamlit app:
 ```bash
@@ -45,12 +45,19 @@ streamlit run app.py
 
 ```
 Movie Recommender System/
-├── app.py                 # Main Streamlit application
-├── movie_list.pkl         # Movie dataset
-├── similarity.pkl         # Similarity matrix
-├── requirements.txt       # Python dependencies
-├── README.md             # Project documentation
-└── .gitignore            # Git ignore file
+├── app.py                              # Main Streamlit application
+├── Movie Recommender System.ipynb      # Jupyter notebook for data processing
+├── requirements.txt                    # Python dependencies
+├── README.md                          # Project documentation
+├── .gitignore                         # Git ignore file
+├── data/                               # Data directory
+│   ├── tmdb_5000_movies.csv           # Movies dataset
+│   └── tmdb_5000_credits.csv          # Credits dataset
+└── models/                             # Models directory
+    ├── movie_list.pkl                  # Processed movie dataset
+    ├── similarity.pkl                  # Similarity matrix
+    ├── movie_dict.pkl                  # Movie dictionary
+    └── posters.pkl                     # Movie posters data
 ```
 
 ## API Key

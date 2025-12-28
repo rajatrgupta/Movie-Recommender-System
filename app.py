@@ -26,8 +26,8 @@ def fetch_poster(movie_title):
 # =========================
 # LOAD DATA
 # =========================
-movies = pickle.load(open("movie_list.pkl", "rb"))
-similarity = pickle.load(open("similarity.pkl", "rb"))
+movies = pickle.load(open("models/movie_list.pkl", "rb"))
+similarity = pickle.load(open("models/similarity.pkl", "rb"))
 
 movies_list = movies["title"].values
 
